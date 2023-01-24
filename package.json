@@ -1,11 +1,10 @@
 {
-    "name": "gulp-scss-starter",
-    "description": "Frontend development with pleasure",
-    "author": "Andrey Gorokhov",
-    "license": "GPL-3.0-only",
+    "name": "DMA Site",
+    "description": "Site for DMA",
+    "author": "DMA Team",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
+        "url": "https://github.com/YaSanyaBeats/dma-site.git"
     },
     "scripts": {
         "dev": "gulp",
