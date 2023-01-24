@@ -13,13 +13,32 @@
 // БЭМ-блоки
 @import "../blocks/modules";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     overflow-x: hidden;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
+    background: url('../img/bg.jpg') no-repeat 50% 0;
+    background-size: cover;
+    font-size: 10px;
+    min-height: 5000px;
 }
 
 .container {
     margin: auto;
     padding: 15px;
     max-width: 1400px;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 8px;
+    }
 }
