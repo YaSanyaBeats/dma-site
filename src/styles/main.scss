@@ -13,8 +13,12 @@
 // БЭМ-блоки
 @import "../blocks/modules";
 
-.nikita-loh {
-    font-size: 60px;
-    text-align: center;
-    line-height: 100vh;
+html, body {
+    overflow-x: hidden;
+}
+
+.container {
+    margin: auto;
+    padding: 15px;
+    max-width: 1400px;
 }
