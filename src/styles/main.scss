@@ -19,6 +19,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -27,18 +31,86 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: url('../img/bg.jpg') no-repeat 50% 0;
     background-size: cover;
-    font-size: 10px;
     min-height: 5000px;
+    margin-top: 200px;
+    color: white;
 }
 
 .container {
     margin: auto;
-    padding: 15px;
-    max-width: 1400px;
+    padding: 0 15px;
+    max-width: 1430px;
 }
 
-@media screen and (max-width: 1400px) {
+button {
+    text-transform: uppercase;
+    padding: 30px 45px;
+    border-radius: 70px;
+    font-size: 2em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Wattauchimma', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 6em;
+}
+
+h3 {
+    font-size: 5em;
+}
+
+h4 {
+    font-size: 4em;
+}
+
+h5 {
+    font-size: 3em;
+}
+
+h6 {
+    font-size: 2em;
+}
+
+span {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1500px) {
     body {
         font-size: 8px;
     }
+}
+
+.decor-border {
+    position: relative;
+}
+
+.decor-border::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    top: -15px;
+    bottom: -15px;
+    background-color: white;
+}
+
+.decor-border_left {
+    padding-left: 30px;
+}
+
+.decor-border_left::before {
+    left: 0;
 }
