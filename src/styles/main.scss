@@ -87,6 +87,10 @@ h6 {
     font-size: 2em;
 }
 
+a {
+    color: white;
+}
+
 span {
     font-size: 2em;
 }
@@ -141,4 +145,28 @@ section {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px white;
     opacity: 0.3;
+}
+
+.animate__underline {
+    position: relative;
+
+    &:after {
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+
+    &:hover {
+        &:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
+    }
 }
