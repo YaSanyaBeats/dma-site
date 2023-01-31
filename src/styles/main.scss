@@ -27,11 +27,15 @@ html, body {
     overflow-x: hidden;
 }
 
+.gradient-bg {
+    background: url('../img/bg.jpg') no-repeat 50% 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url('../img/bg.jpg') no-repeat 50% 0;
+    background: #212121;
     background-size: cover;
-    min-height: 5000px;
+    min-height: 100vh;
     margin-top: 200px;
     color: white;
     z-index: -2;
