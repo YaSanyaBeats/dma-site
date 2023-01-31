@@ -1,11 +1,11 @@
 import "%modules%/header/header";
 
-import "%modules%/hero/hero";
-import "%modules%/quotes/quotes";
-import "%modules%/quiz/quiz";
-import "%modules%/services/services";
-import "%modules%/team/team";
-import "%modules%/about/about";
-import "%modules%/blog/blog";
+import "%modules%/home/hero/hero";
+import "%modules%/home/quotes/quotes";
+import "%modules%/home/quiz/quiz";
+import "%modules%/home/services/services";
+import "%modules%/home/team/team";
+import "%modules%/home/about/about";
+import "%modules%/home/blog/blog";
 
 import "%modules%/footer/footer";
