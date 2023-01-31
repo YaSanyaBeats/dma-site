@@ -8,7 +8,7 @@ import "%modules%/home/team/team";
 import "%modules%/home/about/about";
 import "%modules%/home/blog/blog";
 
-import "%modules%/blog/breadcrumbs/breadcrumbs";
+import "%modules%/breadcrumbs/breadcrumbs";
 import "%modules%/blog/posts/posts";
 
 import "%modules%/footer/footer";
