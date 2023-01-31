@@ -1,0 +1,40 @@
+.footer {
+
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    &__cols {
+        display: flex;
+
+
+        &-left {
+            width: 33%;
+        }
+
+        &-right {
+            width: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__text-title {
+        font-weight: 500;
+        font-size: 32px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__text-text {
+        font-weight: 400;
+        font-size: 2.4em;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    &__logo {
+        font-weight: 800;
+        font-size: 12.8em;
+    }
+}
