@@ -11,5 +11,6 @@ import "%modules%/home/blog/blog";
 import "%modules%/breadcrumbs/breadcrumbs";
 import "%modules%/blog/posts/posts";
 import "%modules%/blog/single-post/single-post";
+import "%modules%/cases/cases";
 
 import "%modules%/footer/footer";
