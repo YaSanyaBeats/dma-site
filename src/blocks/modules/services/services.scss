@@ -1,0 +1,236 @@
+.services {
+    margin-top: 30px;
+
+    &__hero {
+        display: flex;
+
+        &-left {
+            width: 63%;
+        }
+
+        &-right {
+            width: 37%;
+        }
+
+        &-img {
+            transform: translate(15%, 0);
+            width: 650px;
+        }
+
+        &-buttons {
+            display: flex;
+            gap: 100px;
+            margin-top: 100px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 3.2em;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    &__list {
+        margin-top: 60px;
+        width: 90%;
+
+        &-first {
+            margin-top: 90px;
+        }
+
+        &-title {
+            font-size: 3.2em;
+        }
+
+        &-text {
+            font-size: 2em;
+            margin: 20px 0px 0px 30px;
+        }
+    }
+
+    &__content {
+        
+        margin-top: 100px;
+
+        &-title {
+            font-family: 'Montserrat';
+            font-size: 4em;
+        }
+
+        &-text {
+            margin: 30px 0px 70px 0px;
+            font-size: 2.5em;
+        }
+
+        &-list {
+            margin-left: 60px;
+        }
+
+        &-tile {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+    }
+
+    &__options {
+        width: 100%;
+
+        margin-top: 150px;
+        padding: 60px 100px 40px 40px;
+
+        background: rgba(176, 217, 255, 0.53);
+        box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.09), inset 63.9667px -63.9667px 63.9667px rgba(194, 194, 194, 0.1), inset -63.9667px 63.9667px 63.9667px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(37.7403px);
+
+        border-radius: 32px;
+
+        &-title {
+            font-size: 7em;
+        }
+
+        &-list {
+            margin-bottom: 60px;
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+}
+
+.options {
+
+    &__list {
+
+
+        &-item {
+            margin-top: 50px;
+            border-bottom: 1px solid #FFFFFF;
+            padding-bottom: 20px;
+        }
+
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 200;
+            font-size: 3em;
+        }
+
+        &-subtitle {
+            font-size: 1.6em;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+
+        &-price {
+            font-size: 3.6em;
+        }
+
+        &-first {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+        }
+
+        &-second {
+            text-align: center;
+        }
+
+        &-counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 10px;
+        }
+
+        &-count {
+            font-size: 2em;
+            width: 60px;
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            outline: none;
+            border: 1px solid #fff;
+            margin: 0px 5px;
+
+            height: 40px;
+        }
+
+        &-count::-webkit-outer-spin-button,
+        &-count::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        &-minus {
+            width: 30px;
+            padding: 0;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+            font-size: 4em;
+            font-weight: 200;
+            line-height: 100%;
+            height: 100%;
+
+            color: #fff;
+
+            cursor: pointer;
+        }
+        
+        &-plus {
+            width: 30px;
+            padding: 0;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+            font-size: 4em;
+            font-weight: 200;
+            line-height: 100%;
+            height: 100%;
+
+            color: #fff;
+
+            cursor: pointer;
+        }
+
+        &-checkbox {
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        &-checkbox:checked {
+            background-color: white;
+        }
+
+        &-desc {
+            font-size: 1.5em;
+            width: 100%;
+        }
+
+    }
+}
+
+.content__tile {
+    &-item {
+        font-size: 2.5em;
+        flex: 0 0 500px;
+    }
+}
