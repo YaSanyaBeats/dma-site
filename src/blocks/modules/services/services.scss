@@ -352,7 +352,7 @@
       &-trigger:checked
         + &-title
         + &-content-wrapper {
-        max-height: 750px;
+        max-height: 5000px;
       }
       
       &-trigger:checked + &-title::after {
