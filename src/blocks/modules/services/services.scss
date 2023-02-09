@@ -169,7 +169,7 @@
 
 
         &-item {
-            margin-top: 50px;
+            margin-top: 30px;
             border-bottom: 1px solid #FFFFFF;
             padding-bottom: 20px;
         }
@@ -177,6 +177,7 @@
         &-head {
             display: grid;
             grid-template-columns: 60% 20% 20%;
+            grid-template-rows: 60px 30px;
         }
     
         &-title {
@@ -186,6 +187,10 @@
         }
 
         &-subtitle {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
             font-size: 1.6em;
             margin-top: 15px;
             margin-left: 50px;
@@ -311,8 +316,6 @@
         max-height: 0px;
         overflow: hidden;
         transition: 0.25s ease-in-out;
-
-        margin-top: 30px;
       }
       
       &-title {
@@ -341,7 +344,6 @@
         left: 2px;
         position: relative;
         right: 20px;
-        top: 2px;
         transform: rotate(135deg);
         transition: 0.35s ease-in-out;
         width: 10px;
@@ -363,4 +365,285 @@
       &-trigger {
         display: none;
       }
+}
+
+@media (max-width: 1100px) {
+    .services {
+
+        margin-top: 0;
+
+        &__hero {
+            &-img {
+                transform: translate(0%, 5%);
+                width: 400px;
+            }
+
+            &-buttons {
+                margin-top: 30px;
+                gap: 30px;
+            }
+        }
+
+        &__list {
+            margin-top: 40px;
+        }
+
+        &__content {
+
+            margin-top: 30px;
+
+            &-title {
+                margin-top: 30px;
+            }
+        }
+
+        &__options {
+            padding: 20px 40px;
+
+            &-list {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .options {
+        &__list {
+
+            &-item {
+                margin-top: 30px;
+            }
+
+            &-third {
+                display: flex;
+                justify-content: right;
+                align-items: center;
+            }
+        }
+    }
+
+    .content__tile-item {
+        flex: 0 0 300px;
+    }
+    
+}
+
+@media (max-width: 870px) {
+
+    .services {
+        &__packets {
+            gap: 30px 0;
+        }
+    }
+
+    #services {
+
+        &__packets {
+    
+            &-optimal {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+    
+            &-business {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+    
+            &-key {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    .services {
+        &__hero {
+            
+            &-right {
+                display: none;
+            }
+
+            &-left {
+                width: 100%;
+            }
+        }
+
+        &__subtitle {
+            font-size: 4em;
+        }
+
+        &__list {
+
+            margin-top: 20px;
+
+            &-title {
+                font-size: 4em;
+            }
+
+            &-text {
+                margin: 10px 0px 0px 10px;
+                font-size: 3em;
+            }
+
+            &-first {
+                margin-top: 40px;
+            }
+        }
+
+        &__content {
+            &-list {
+                margin-left: 15px;
+            }
+
+            &-tile {
+                display: block;
+                margin-top: 10px;
+                width: 80%;
+            }
+
+            &-text {
+                font-size: 3em;
+            }
+        }
+
+        &__options {
+            margin-top: 30px;
+            padding: 15px;
+
+            &-title {
+                text-align: center;
+            }
+
+            &-list {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__packets {
+            &-button {
+                margin-top: 50px;
+                width: 200px;
+            }
+        }
+    }
+
+    .options {
+
+        &__list {
+            &-count {
+                width: 25px;
+                height: 25px;
+            }
+
+            &-subtitle {
+                margin-left: 20px;
+                font-size: 2em;
+            }
+
+            &-first {
+                gap: 10px;
+            }
+
+            &-price {
+                font-size: 3em;
+            }
+
+            &-title {
+                font-size: 3em;
+                margin-right: 10px;
+            }
+
+            &-checkbox {
+                width: 10px;
+                height: 10px;
+            }
+
+            &-item {
+                margin-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            &-head {
+                display: grid;
+                grid-template-columns: 70% 30% 100%;
+                grid-template-rows: 50px 50px;
+            }
+
+            &-nocounter {
+                grid-template-columns: 70% 30%;
+                grid-template-rows: 30px;
+            }
+
+            &-first {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+
+            &-third {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+
+            &-second {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 2;
+
+                text-align: right;
+            }
+
+            &-subtitle {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+
+            &-counter {
+                justify-content: flex-end;
+            }
+
+            &-plus {
+                width: 10px;
+            }
+            
+            &-minus {
+                width: 10px;
+            }
+        }
+    }
+
+    .content {
+        &__tile {
+            &-item {
+                margin-top: 10px;
+                font-size: 3em;
+            }
+        }
+    }
+
+    .page__title {
+        text-align: center;
+    }
+
+    .services__accordeon {
+        
+        &-title {
+
+            padding: 0;
+
+            &:after {
+                width: 5px;
+                height: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
 }
