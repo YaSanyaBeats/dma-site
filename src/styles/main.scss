@@ -13,6 +13,9 @@
 // БЭМ-блоки
 @import "../blocks/modules";
 
+ // import Swiper styles
+@import '../../node_modules/swiper/swiper-bundle.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -60,6 +63,11 @@ body {
     cursor: pointer;
     background-color: #F7931D;
     color: white;
+}
+
+.button-white {
+    background-color: #fff;
+    color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -118,6 +126,10 @@ section {
 @media screen and (max-width: 768px) {
     body {
         font-size: 4px;
+    }
+
+    .accent__button {
+        padding: 10px 20px;
     }
 }
 
