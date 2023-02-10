@@ -13,9 +13,6 @@
 // БЭМ-блоки
 @import "../blocks/modules";
 
- // import Swiper styles
-@import '../../node_modules/swiper/swiper-bundle.css';
-
 * {
     margin: 0;
     padding: 0;
@@ -195,6 +192,79 @@ section {
         &:after {
             transform-origin: bottom left;
             transform: scaleX(1);
+        }
+    }
+}
+
+.slider {
+    &__buttons {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__button {
+        flex: 0 0 70px;
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 20px;
+        }
+    
+        &_left::after {
+            background: url('../img/sprites/left-chevron.svg') no-repeat 50% 50%;
+            background-size: contain;
+        }
+    
+        &_right::after {
+            background: url('../img/sprites/right-chevron.svg') no-repeat 50% 50%;
+            background-size: contain;
+        }
+    }
+    
+    &__dots {
+        display: flex;
+        align-items: center;
+
+        & .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            opacity: 1;
+            border-radius: 50%;
+            background-color: transparent;
+            transition: .3s;
+            &-active {
+                background-color: white;
+                border-color: transparent;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider {
+        &__dots {
+            & .swiper-pagination-bullet {
+                width: 7px;
+                height: 7px;
+                &-active {
+                    width: 5px;
+                    height: 5px;
+                }
+            }
         }
     }
 }

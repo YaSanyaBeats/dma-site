@@ -1,0 +1,134 @@
+.quotes {
+
+    &__swiper {
+        position: relative;
+        
+    }
+
+    &__slider-buttons {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        z-index: 3;
+    }
+
+    &__slider-dots {
+        position: absolute;
+        right: 50px !important;
+        top: 300px !important;
+        bottom: unset !important;
+        left: unset !important;
+        justify-content: flex-end;
+        z-index: 3;
+    }
+
+    &__overlap {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 240px;
+        background: rgba(29, 216, 247, 0.53);
+        box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.09), inset 63.9667px -63.9667px 63.9667px rgba(194, 194, 194, 0.1), inset -63.9667px 63.9667px 63.9667px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(37.7403px);
+        border-radius: 32px;
+    }
+
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    padding: 140px 300px 0 80px;
+    gap: 10px;
+    &__info {
+        padding: 180px 0 100px 0;
+    }
+    &__title {
+        font-size: 4em;
+        margin-bottom: 50px;
+    }
+    &__description {
+        font-size: 2.4em;
+    }
+    &__img-wrapper {
+        flex: 0 0 45%;
+    }
+    &__img {
+        filter: drop-shadow(30px -30px 60px rgba(0,0,0,0.25));
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .quote {
+        &__img-wrapper {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .quotes {
+		&__slider-dots {
+            top: unset !important;
+            right: unset !important;
+            bottom: 10px !important;
+            left: 15px !important;
+            justify-content: flex-start;
+        }
+		&__slider-buttons {
+            display: none;
+        }
+		&__overlap {
+            border-radius: 10px;
+            top: 0;
+        }
+    }
+    .quote {
+        padding: 20px;
+        &__info {
+            padding: 0;
+        }
+        &__img-wrapper {
+            flex: 0 0 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quotes {
+		&__swiper {}
+		&__slider-dots {
+        }
+		&__slider-buttons {
+        }
+		&__overlap {
+            top: 30px;
+        }
+    }
+    .quote {
+        align-items: stretch;
+        padding: 0 0 0 20px;
+        &__info {
+            padding: 50px 0 30px 0;
+            flex: 0 0 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__description {}
+        &__img-wrapper {
+            flex: 0 0 180px;
+            transform: translateX(10%);
+        }
+        &__img {
+            filter: none;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
