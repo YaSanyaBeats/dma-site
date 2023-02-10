@@ -27,6 +27,10 @@ import "%modules%/cases/cases";
 
 import "%modules%/services/services";
 
+/* Reviews */
+
+import "%modules%/reviews/reviews";
+
 /* Footer */
 
 import "%modules%/footer/footer";

@@ -1,0 +1,66 @@
+.reviews {
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 45px;
+
+        &-left, &-right {
+            background: rgba(176, 217, 255, 0.53);
+            box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.09), inset 63.9667px -63.9667px 63.9667px rgba(194, 194, 194, 0.1), inset -63.9667px 63.9667px 63.9667px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(37.7403px);
+            /* Note: backdrop-filter has minimal browser support */
+    
+            border-radius: 32px;
+        }
+
+        &-left {
+            padding: 50px;
+            width: 70%;
+        }
+
+        &-right {
+            padding: 25px 40px;
+            width: 30%;
+        }
+    }
+
+    &-swiper-pagination {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__title {
+        font-size: 10em;
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        font-family: 'Wattauchimma';
+        font-size: 3em;
+        text-align: left;
+
+        text-decoration: none;
+
+        & img {
+            height: 2em;
+            width: 2em;
+        }
+    }
+}
+
+.videoreviews {
+    &__wrapper {
+        background: rgba(176, 217, 255, 0.53);
+        box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.09), inset 63.9667px -63.9667px 63.9667px rgba(194, 194, 194, 0.1), inset -63.9667px 63.9667px 63.9667px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(37.7403px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 32px;
+
+        padding: 50px;
+    }
+}
