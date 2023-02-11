@@ -45,3 +45,12 @@
 .header__orange {
     background-color: #F7931D;
 }
+
+@media screen and (max-width: 1430px) {
+    .header{
+        &__logo {
+            width: 150px;
+            height: 75px;
+        }
+    }
+}
