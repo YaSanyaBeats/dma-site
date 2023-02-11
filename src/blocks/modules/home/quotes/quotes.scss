@@ -1,5 +1,5 @@
 .quotes {
-
+    margin-top: -400px;
     &__swiper {
         position: relative;
         
@@ -70,6 +70,7 @@
 
 @media screen and (max-width: 1100px) {
     .quotes {
+        margin-top: 100px;
 		&__slider-dots {
             top: unset !important;
             right: unset !important;
