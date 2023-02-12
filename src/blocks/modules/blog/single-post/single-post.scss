@@ -84,6 +84,13 @@
         &__info {
             flex: 0 0 350px;
         }
+
+        &__content {
+            margin-top: 40px;
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 30px;
+        }
     }
 }
 
@@ -123,6 +130,8 @@
         &__content {
             margin-top: 40px;
             width: 100%;
+            font-size: 1.8em;
+            line-height: 25px;
 
             img {
                 margin: 15px 0;
