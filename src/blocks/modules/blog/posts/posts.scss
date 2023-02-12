@@ -67,11 +67,38 @@
 @media (max-width: 1100px) {
     .posts {
         grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+        &__card {
+
+            &-title {
+                font-size: 6em;
+            }
+            &-category, &-date {
+                font-size: 4em;
+            }
+        }
+    }
+
+    .page__title {
+        font-size: 15em;
     }
 }
 
 @media (max-width: 768px) {
     .posts {
         grid-template-columns: 1fr;
+        margin-top: 60px;
+        &__card {
+
+            &-title {
+                font-size: 8em;
+            }
+            &-category, &-date {
+                font-size: 6em;
+            }
+        }
+    }
+    .page__title {
+        font-size: 15em;
     }
 }
