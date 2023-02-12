@@ -1,7 +1,7 @@
 .blog {
     &__posts {
         display: grid;
-        grid-template-columns: 40% 30% 30%;
+        grid-template-columns: 4fr 3fr 3fr;
         gap: 50px;
 
         padding-top: 350px;
@@ -38,15 +38,65 @@
         object-fit: cover;
         object-position: 50% 50%;
         border-radius: 20px;
-        height: 350px;
+        height: 100%;
 
         transition: .4s;
     }
 
     &-title {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 3.2em;
 
         transition: .4s;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .blog {
+		&__posts {
+            padding-top: 150px;
+            padding-bottom: 30px;
+            display: flex;
+            grid-template-columns: unset;
+            gap: unset;
+            
+        }
+		&__post-item {}
+		&__card {
+            display: block;
+            width: 290px;
+            &_first {
+                width: 460px;
+            }
+        }
+		&__card-img {
+            height: 270px;
+        }
+		&__card-title {}
+    }
+    .decor {
+        &__heading {}
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+		&__posts {
+            padding-top: 100px;
+        }
+		&__post-item {}
+		&__card {
+            width: 190px;
+            &_first {
+                width: 260px;
+            }
+        }
+		&__card-img {
+            height: 170px;
+        }
+		&__card-title {}
+    }
+    .decor {
+        &__heading {}
     }
 }

@@ -13,14 +13,14 @@ const quotesSlider = new Swiper('.quotes__swiper', {
     
     // If we need pagination
     pagination: {
-        el: '.slider__dots',
+        el: '.quotes__swiper .slider__dots',
         clickable: true
     },
     
     // Navigation arrows
     navigation: {
-        prevEl: '.slider__button_left',
-        nextEl: '.slider__button_right',
+        prevEl: '.quotes__swiper .slider__button_left',
+        nextEl: '.quotes__swiper .slider__button_right',
     },
 
 });
