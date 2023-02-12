@@ -21,7 +21,7 @@
 
     &__text-title {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 3.2em;
         display: block;
         margin-bottom: 10px;
     }
@@ -36,5 +36,34 @@
     &__logo {
         font-weight: 800;
         font-size: 12.8em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        &__cols {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__cols-left {
+            width: 100%;
+        }
+        &__text {}
+        &__text-title {}
+        &__text-text {
+            margin-bottom: 20px;
+        }
+        &__cols-right {}
+        &__logo {}
     }
 }
