@@ -1,0 +1,246 @@
+.team {
+    &__decor-heading {
+        font-size: 30em;
+    }
+    &__cards {
+        padding-top: 300px;
+    }
+    &__cards-slide {
+        margin: 0 !important;
+    }
+    &__cards-swiper-wrapper {
+        gap: 50px;
+    }
+    &__card {
+        box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.09), inset 63.9667px -63.9667px 63.9667px rgba(194, 194, 194, 0.1), inset -63.9667px 63.9667px 63.9667px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(37.7403px);
+        border-radius: 32px;
+        
+    }
+    
+    &__dots-external {
+        display: none !important;
+    }
+}
+.decor {
+    &__heading {}
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.team-card {
+    &__img-wrapper {
+        flex: 0 0 222px;
+    }
+    &__img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    &__info {}
+    &__info-title {
+        font-size: 4.8em;
+        margin-bottom: 75px;
+    }
+    &__name {
+        display: inline-block;
+        font-size: 2em;
+        max-width: 160px;
+    }
+    &__slide {
+        display: flex;
+        gap: 20px;
+        padding: 80px 40px 20px 40px;
+        min-height: 400px;
+    }
+    &__slider-dots {
+        position: absolute;
+        top: 50px !important;
+        bottom: unset !important;
+        left: unset !important;
+        right: 40px;
+        justify-content: flex-end;
+        z-index: 2;
+        width: fit-content !important;
+    }
+    &__slider-buttons {
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        gap: 35px;
+        z-index: 2;
+    }
+    &__slider-button {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 50px;
+    }
+}
+.slider {
+    &__dots {}
+    &__button {
+        &_left {}
+        &_right {}
+    }
+}
+
+#team {
+    &-slider1 {
+        background-color: rgba(247, 186, 29, 0.53);
+    }
+    &-slider2 {
+        background-color: rgba(247, 55, 29, 0.53);
+    }
+    &-slider3 {
+        background-color: rgba(29, 247, 221, 0.53);
+    }
+    &-slider4 {
+        background-color: rgba(190, 29, 247, 0.53);
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .team {
+		&__cards {
+            padding-top: 250px;
+        }
+		&__cards-swiper-wrapper {
+            gap: 20px
+        }
+		&__cards-slide {}
+		&__card {}
+		&__dots-external {}
+    }
+    .decor {
+		&__heading {}
+    }
+    .team-card {
+		&__slide {
+            min-height: 350px;
+        }
+		&__img-wrapper {
+            flex: 0 0 150px;
+        }
+		&__img {}
+		&__info {}
+		&__info-title {}
+		&__name {
+            max-width: 110px;
+        }
+		&__slider-dots {
+            top: 25px !important;
+        }
+		&__slider-buttons {
+            gap: 20px;
+            right: 20px;
+            bottom: 15px;
+        }
+		&__slider-button {
+            flex: 0 0 25px;
+            width: 25px;
+            height: 25px;
+            &::after {
+                width: 4px;
+                height: 8px;
+            }
+        }
+    }
+    .slider {
+		&__dots {}
+		&__buttons {}
+		&__button {
+			&_left {}
+			&_right {}
+		}
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .team {
+		&__cards {
+            padding-top: 150px;
+        }
+		&__cards-swiper-wrapper {}
+		&__cards-slide {}
+		&__card {}
+		&__dots-external {
+            display: flex !important;
+            justify-content: center !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .decor {
+		&__heading {}
+    }
+    .team-card {
+		&__slide {
+            min-height: 250px;
+            padding: 40px 20px 15px 20px;
+        }
+		&__img-wrapper {
+            flex: 0 0 100px;
+        }
+		&__img {}
+		&__info {}
+		&__info-title {
+        }
+		&__name {
+        }
+		&__slider-dots {}
+		&__slider-buttons {}
+		&__slider-button {}
+    }
+    .slider {
+		&__dots {}
+		&__buttons {}
+		&__button {
+			&_left {}
+			&_right {}
+		}
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+		&__cards {
+            padding-top: 70px;
+        }
+		&__cards-swiper-wrapper {}
+		&__cards-slide {}
+		&__card {}
+		&__dots-external {}
+        &__decor-heading {
+            font-size: 16em;
+        }
+    }
+    .decor {
+		&__heading {}
+    }
+    .team-card {
+		&__slide {
+            min-height: 200px;
+        }
+		&__img-wrapper {
+        }
+		&__img {}
+		&__info {}
+		&__info-title {
+        }
+		&__name {
+        }
+		&__slider-dots {}
+		&__slider-buttons {}
+		&__slider-button {}
+    }
+    .slider {
+		&__dots {}
+		&__buttons {}
+		&__button {
+			&_left {}
+			&_right {}
+		}
+    }
+}
