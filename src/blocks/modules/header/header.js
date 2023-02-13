@@ -21,7 +21,7 @@ if(header !== null) {
 
         let currentScroll = document.documentElement.scrollTop;
 
-        if(currentScroll > 100) {
+        if(currentScroll > 10) {
             header.classList.add('header_scroll');
         }
         else {
