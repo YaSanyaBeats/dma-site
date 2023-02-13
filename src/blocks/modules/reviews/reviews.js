@@ -14,14 +14,6 @@ const reviewsSlider = new Swiper('.reviews-swiper', {
           el: '.reviews-swiper .reviews__slider-dots',
           clickable: true
         },
-
-        breakpoints: {
-          1100: {
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 25,
-          }
-        },
       
         // Navigation arrows
         navigation: {
